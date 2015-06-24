@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Second : UIViewController {
+class Logement : UIViewController {
     override func viewDidLoad() {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }

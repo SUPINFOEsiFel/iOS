@@ -16,7 +16,7 @@
 		AC0FA4401AD5EAF900375765 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0FA43F1AD5EAF900375765 /* SWRevealViewController.m */; };
 		AC0FA4421AD5ECD200375765 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FA4411AD5ECD200375765 /* BackTableVC.swift */; };
 		AC0FA4441AD5F0C900375765 /* Evenement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FA4431AD5F0C900375765 /* Evenement.swift */; };
-		AC0FA4461AD5F12600375765 /* Second.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FA4451AD5F12600375765 /* Second.swift */; };
+		AC0FA4461AD5F12600375765 /* Logement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FA4451AD5F12600375765 /* Logement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 		AC0FA43F1AD5EAF900375765 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		AC0FA4411AD5ECD200375765 /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 		AC0FA4431AD5F0C900375765 /* Evenement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evenement.swift; sourceTree = "<group>"; };
-		AC0FA4451AD5F12600375765 /* Second.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Second.swift; sourceTree = "<group>"; };
+		AC0FA4451AD5F12600375765 /* Logement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 				AC0FA41D1AD5EA1D00375765 /* AppDelegate.swift */,
 				AC0FA41F1AD5EA1D00375765 /* ViewController.swift */,
 				AC0FA4211AD5EA1D00375765 /* Main.storyboard */,
-				AC0FA4451AD5F12600375765 /* Second.swift */,
+				AC0FA4451AD5F12600375765 /* Logement.swift */,
 				AC0FA4431AD5F0C900375765 /* Evenement.swift */,
 				AC0FA4411AD5ECD200375765 /* BackTableVC.swift */,
 				AC0FA4241AD5EA1D00375765 /* Images.xcassets */,
@@ -233,7 +233,7 @@
 				AC0FA4421AD5ECD200375765 /* BackTableVC.swift in Sources */,
 				AC0FA4441AD5F0C900375765 /* Evenement.swift in Sources */,
 				AC0FA4401AD5EAF900375765 /* SWRevealViewController.m in Sources */,
-				AC0FA4461AD5F12600375765 /* Second.swift in Sources */,
+				AC0FA4461AD5F12600375765 /* Logement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

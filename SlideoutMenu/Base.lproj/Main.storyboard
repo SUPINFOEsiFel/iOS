@@ -44,7 +44,7 @@
                                     <segue destination="QFs-Ga-y6R" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="xFW-Ge-bUb"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Second" id="qUI-iy-gdm">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Logement" id="qUI-iy-gdm">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qUI-iy-gdm" id="dHj-kx-mU7">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="1870" y="-687"/>
         </scene>
-        <!--Second-->
+        <!--Logement-->
         <scene sceneID="vys-1W-4nr">
             <objects>
-                <viewController id="CPD-u6-08u" customClass="Second" customModule="SlideoutMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CPD-u6-08u" customClass="Logement" customModule="SlideoutMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MAf-Xd-eFU"/>
                         <viewControllerLayoutGuide type="bottom" id="aOa-g4-gdj"/>
