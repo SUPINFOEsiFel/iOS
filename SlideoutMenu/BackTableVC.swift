@@ -13,7 +13,7 @@ class BackTableVC: UITableViewController {
     var TableArray = [String]()
     
     override func viewDidLoad() {
-        TableArray = ["Evenement","Logement","World"]
+        TableArray = ["Evenement","Logement"]
         
         tableView.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
     }
