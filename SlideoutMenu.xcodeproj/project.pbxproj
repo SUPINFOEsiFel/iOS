@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA5F83B61B3BF82A00DCCD19 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F83B51B3BF82A00DCCD19 /* SwiftyJSON.swift */; };
+		AA5F83B81B3BF84A00DCCD19 /* EventFel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F83B71B3BF84A00DCCD19 /* EventFel.swift */; };
+		AA5F83BA1B3BF9E100DCCD19 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F83B91B3BF9E100DCCD19 /* CustomCell.swift */; };
 		AC0FA41E1AD5EA1D00375765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FA41D1AD5EA1D00375765 /* AppDelegate.swift */; };
 		AC0FA4201AD5EA1D00375765 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0FA41F1AD5EA1D00375765 /* ViewController.swift */; };
 		AC0FA4231AD5EA1D00375765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0FA4211AD5EA1D00375765 /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA5F83B51B3BF82A00DCCD19 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		AA5F83B71B3BF84A00DCCD19 /* EventFel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFel.swift; sourceTree = "<group>"; };
+		AA5F83B91B3BF9E100DCCD19 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		AC0FA4181AD5EA1D00375765 /* SlideoutMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideoutMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0FA41C1AD5EA1D00375765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC0FA41D1AD5EA1D00375765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 		AC0FA41A1AD5EA1D00375765 /* SlideoutMenu */ = {
 			isa = PBXGroup;
 			children = (
+				AA5F83B91B3BF9E100DCCD19 /* CustomCell.swift */,
+				AA5F83B71B3BF84A00DCCD19 /* EventFel.swift */,
+				AA5F83B51B3BF82A00DCCD19 /* SwiftyJSON.swift */,
 				AC0FA41D1AD5EA1D00375765 /* AppDelegate.swift */,
 				AC0FA41F1AD5EA1D00375765 /* ViewController.swift */,
 				AC0FA4211AD5EA1D00375765 /* Main.storyboard */,
@@ -230,9 +239,12 @@
 			files = (
 				AC0FA4201AD5EA1D00375765 /* ViewController.swift in Sources */,
 				AC0FA41E1AD5EA1D00375765 /* AppDelegate.swift in Sources */,
+				AA5F83B81B3BF84A00DCCD19 /* EventFel.swift in Sources */,
 				AC0FA4421AD5ECD200375765 /* BackTableVC.swift in Sources */,
+				AA5F83BA1B3BF9E100DCCD19 /* CustomCell.swift in Sources */,
 				AC0FA4441AD5F0C900375765 /* Hello.swift in Sources */,
 				AC0FA4401AD5EAF900375765 /* SWRevealViewController.m in Sources */,
+				AA5F83B61B3BF82A00DCCD19 /* SwiftyJSON.swift in Sources */,
 				AC0FA4461AD5F12600375765 /* Second.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
