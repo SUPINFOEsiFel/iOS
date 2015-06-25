@@ -8,9 +8,10 @@
 
 import Foundation
 
-class Hello : UIViewController, UITableViewDataSource, UITableViewDelegate {
+class Hello : UIViewController{
     
     
+    @IBOutlet weak var MyTableView: UITableView!
     var arrayOfEvent: [EventFel] = [EventFel]()
     let baseImgUrl: String = "http://37.187.245.237/upload/"
     
@@ -100,7 +101,7 @@ class Hello : UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.loadEvents()
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
 }

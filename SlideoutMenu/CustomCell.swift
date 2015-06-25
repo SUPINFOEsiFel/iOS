@@ -10,11 +10,12 @@ import UIKit
 
 class CustomCell: UITableViewCell {
     
-    /*@IBOutlet weak var ImageEvent: UIImageView!
+
+    @IBOutlet weak var ImageEvent: UIImageView!
     @IBOutlet weak var Title: UILabel!
     @IBOutlet weak var Date: UILabel!
-    @IBOutlet weak var Description: UILabel!*/
-    
+    @IBOutlet weak var Description: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib();
     }
@@ -24,9 +25,9 @@ class CustomCell: UITableViewCell {
     }
     
     func setCell(title: String, content: String, image: UIImage, date: String){
-        /*self.Title.text = title;
+        self.Title.text = title;
         self.Description.text = content;
         self.ImageEvent.image = image;
-        self.Date.text = date;*/
+        self.Date.text = date;
     }
 }
