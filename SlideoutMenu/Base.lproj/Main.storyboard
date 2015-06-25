@@ -79,44 +79,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnT-6i-nFY">
-                                <rect key="frame" x="16" y="297" width="90" height="104"/>
-                                <state key="normal" image="G-35-120712164356-1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bron" translatesAutoresizingMaskIntoConstraints="NO" id="RVy-3c-xeN">
+                                <rect key="frame" x="16" y="20" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="X2s-3B-yjh"/>
+                                    <constraint firstAttribute="width" constant="90" id="nJY-Sp-Zo1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Daly" translatesAutoresizingMaskIntoConstraints="NO" id="Ema-GK-Tdp">
+                                <rect key="frame" x="16" y="126" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Jyx-54-Ose"/>
+                                    <constraint firstAttribute="width" constant="90" id="yQG-zx-zTS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Dufy" translatesAutoresizingMaskIntoConstraints="NO" id="p9M-fY-ArI">
+                                <rect key="frame" x="16" y="230" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="1Io-75-t7C"/>
+                                    <constraint firstAttribute="width" constant="90" id="h6M-eW-cVB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="SaintLouis" translatesAutoresizingMaskIntoConstraints="NO" id="sg5-4l-03o">
+                                <rect key="frame" x="16" y="342" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Lg3-L7-aM3"/>
+                                    <constraint firstAttribute="width" constant="90" id="c2t-Dk-3lK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sD9-Wn-gKS">
+                                <rect key="frame" x="124" y="20" width="180" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Residence Bron Lumiere">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="OnImageClick:" destination="CPD-u6-08u" eventType="touchUpInside" id="Jw6-6w-2RH"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXx-D0-NFa">
-                                <rect key="frame" x="16" y="20" width="90" height="93"/>
-                                <state key="normal" image="G-35-120712164356-1">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7f-Fp-RES">
+                                <rect key="frame" x="124" y="126" width="180" height="90"/>
+                                <state key="normal" title="Residence Dali II">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="OnImageClick:" destination="CPD-u6-08u" eventType="touchUpInside" id="zsv-Am-vnU"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMx-w4-hSb">
-                                <rect key="frame" x="16" y="159" width="90" height="98"/>
-                                <state key="normal" image="G-35-120712164356-1">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9N-0i-XZr">
+                                <rect key="frame" x="124" y="230" width="180" height="90"/>
+                                <state key="normal" title="Residence Dufy 4 ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="OnImageClick:" destination="CPD-u6-08u" eventType="touchUpInside" id="29m-9g-CXh"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBz-z5-7bj">
-                                <rect key="frame" x="16" y="437" width="90" height="111"/>
-                                <state key="normal" image="G-35-120712164356-1">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3Y-3u-W8O">
+                                <rect key="frame" x="124" y="342" width="180" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Residence Saint-Louis">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="OnImageClick:" destination="CPD-u6-08u" eventType="touchUpInside" id="XOV-F9-b1Y"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J7f-Fp-RES" firstAttribute="trailing" secondItem="wOe-6I-7tn" secondAttribute="trailingMargin" id="4El-Ob-D81"/>
+                            <constraint firstItem="J7f-Fp-RES" firstAttribute="leading" secondItem="Ema-GK-Tdp" secondAttribute="trailing" constant="18" id="5Up-3X-zyU"/>
+                            <constraint firstItem="p9M-fY-ArI" firstAttribute="top" secondItem="Ema-GK-Tdp" secondAttribute="bottom" constant="14" id="8FF-gj-IxH"/>
+                            <constraint firstItem="sD9-Wn-gKS" firstAttribute="trailing" secondItem="wOe-6I-7tn" secondAttribute="trailingMargin" id="9Fv-CK-D8k"/>
+                            <constraint firstItem="sg5-4l-03o" firstAttribute="leading" secondItem="p9M-fY-ArI" secondAttribute="trailing" constant="-90" id="Apa-0Q-XaD"/>
+                            <constraint firstItem="v3Y-3u-W8O" firstAttribute="leading" secondItem="sg5-4l-03o" secondAttribute="trailing" constant="18" id="DqW-0B-WsE"/>
+                            <constraint firstItem="v3Y-3u-W8O" firstAttribute="trailing" secondItem="wOe-6I-7tn" secondAttribute="trailingMargin" id="Qi5-JM-dxj"/>
+                            <constraint firstItem="v9N-0i-XZr" firstAttribute="trailing" secondItem="wOe-6I-7tn" secondAttribute="trailingMargin" id="UOR-4b-FaJ"/>
+                            <constraint firstItem="v9N-0i-XZr" firstAttribute="leading" secondItem="p9M-fY-ArI" secondAttribute="trailing" constant="18" id="joE-4N-1P0"/>
+                            <constraint firstItem="RVy-3c-xeN" firstAttribute="top" secondItem="MAf-Xd-eFU" secondAttribute="bottom" id="uH8-wa-sGm"/>
+                            <constraint firstItem="RVy-3c-xeN" firstAttribute="leading" secondItem="wOe-6I-7tn" secondAttribute="leadingMargin" id="yFV-id-EiE"/>
+                            <constraint firstItem="sD9-Wn-gKS" firstAttribute="leading" secondItem="RVy-3c-xeN" secondAttribute="trailing" constant="18" id="zWR-hk-64b"/>
+                            <constraint firstItem="Ema-GK-Tdp" firstAttribute="leading" secondItem="RVy-3c-xeN" secondAttribute="trailing" constant="-90" id="zeP-6w-mK1"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -229,7 +262,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="G-35-120712164356-1" width="400" height="300"/>
+        <image name="Bron" width="132" height="132"/>
+        <image name="Daly" width="132" height="132"/>
+        <image name="Dufy" width="132" height="132"/>
+        <image name="SaintLouis" width="132" height="132"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="0hI-I7-F7x"/>
