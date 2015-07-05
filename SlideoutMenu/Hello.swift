@@ -13,12 +13,12 @@ class Hello : UIViewController{
     
     @IBOutlet weak var MyTableView: UITableView!
     var arrayOfEvent: [EventFel] = [EventFel]()
-    let baseImgUrl: String = "http://37.187.245.237/upload/"
+    let baseImgUrl: String = "http://api.fel.asso.fr/upload/"
     
     func loadEvents(){
         var date = NSDate()
         
-        var urlString = "http://37.187.245.237/api/events" // Your Normal URL String
+        var urlString = "http://api.fel.asso.fr/api/events" // Your Normal URL String
         var url = NSURL(string: urlString)// Creating URL
         var request = NSURLRequest(URL: url!) // Creating Http Request
         var response: AutoreleasingUnsafeMutablePointer<NSURLResponse?> = nil;
@@ -33,33 +33,37 @@ class Hello : UIViewController{
         }else if(responseData != nil){
             let json = JSON(data: responseData!)
             var i: Int = 0
-            //var test: Int =
-            for i in 0..<json["events"].count{      //Parsing du JSON avec SwiftyJSON
-                var new_event = EventFel(id: "1", title: "Test", date: date.description , content: "Test content", image: UIImage());
-                if let name = json["events"][i]["name"].string{
-                    new_event.title = name
-                }
-                if let content = json["events"][i]["comment"].string{
-                    new_event.content = content
-                }
-                if let date = json["events"][i]["begin"].string{
-                    new_event.date = date
-                }
-                if let id = json["events"][i]["_id"].string{
-                    new_event.id = id
-                    var imageUrl = self.baseImgUrl + id;
-                    if let ext = json["events"][i]["imageExtension"].string{
-                        imageUrl += ext
-                    }else{
-                        imageUrl += ".png"
+            if(json["events"].count == 0){
+                var event_void = EventFel(id: "error", title: "Aucun evenements", date: date.description , content: "Il n'y a actuellement aucun evenement prevu", image: UIImage());
+                arrayOfEvent.append(event_void);
+            }else{
+                for i in 0..<json["events"].count{      //Parsing du JSON avec SwiftyJSON
+                    var new_event = EventFel(id: "1", title: "Test", date: date.description , content: "Test content", image: UIImage());
+                    if let name = json["events"][i]["name"].string{
+                        new_event.title = name
                     }
-                    let url = NSURL(string: imageUrl)
-                    if let data = NSData(contentsOfURL: url!){
-                        var image = UIImage(data: data)
-                        new_event.image = image!
+                    if let content = json["events"][i]["comment"].string{
+                        new_event.content = content
                     }
+                    if let date = json["events"][i]["begin"].string{
+                        new_event.date = date
+                    }
+                    if let id = json["events"][i]["_id"].string{
+                        new_event.id = id
+                        var imageUrl = self.baseImgUrl + id;
+                        if let ext = json["events"][i]["imageExtension"].string{
+                            imageUrl += ext
+                        }else{
+                            imageUrl += ".png"
+                        }
+                        let url = NSURL(string: imageUrl)
+                        if let data = NSData(contentsOfURL: url!){
+                            var image = UIImage(data: data)
+                            new_event.image = image!
+                        }
+                    }
+                    arrayOfEvent.append(new_event)
                 }
-                arrayOfEvent.append(new_event)
             }
         }else{
             var event_error = EventFel(id: "error", title: "Erreur", date: date.description , content: "Impossible de se connecter au serveur", image: UIImage());
