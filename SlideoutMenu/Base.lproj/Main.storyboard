@@ -79,28 +79,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bron" translatesAutoresizingMaskIntoConstraints="NO" id="RVy-3c-xeN">
-                                <rect key="frame" x="16" y="20" width="90" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="X2s-3B-yjh"/>
-                                    <constraint firstAttribute="width" constant="90" id="nJY-Sp-Zo1"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Daly" translatesAutoresizingMaskIntoConstraints="NO" id="Ema-GK-Tdp">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Daly" translatesAutoresizingMaskIntoConstraints="NO" id="Ema-GK-Tdp">
                                 <rect key="frame" x="16" y="126" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Jyx-54-Ose"/>
                                     <constraint firstAttribute="width" constant="90" id="yQG-zx-zTS"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Dufy" translatesAutoresizingMaskIntoConstraints="NO" id="p9M-fY-ArI">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Dufy" translatesAutoresizingMaskIntoConstraints="NO" id="p9M-fY-ArI">
                                 <rect key="frame" x="16" y="230" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="1Io-75-t7C"/>
                                     <constraint firstAttribute="width" constant="90" id="h6M-eW-cVB"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="SaintLouis" translatesAutoresizingMaskIntoConstraints="NO" id="sg5-4l-03o">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="SaintLouis" translatesAutoresizingMaskIntoConstraints="NO" id="sg5-4l-03o">
                                 <rect key="frame" x="16" y="342" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Lg3-L7-aM3"/>
@@ -113,18 +106,27 @@
                                 <state key="normal" title="Residence Bron Lumiere">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="ButtonBron:" destination="CPD-u6-08u" eventType="touchUpInside" id="SuG-C5-hxh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7f-Fp-RES">
                                 <rect key="frame" x="124" y="126" width="180" height="90"/>
                                 <state key="normal" title="Residence Dali II">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="ButtonDali:" destination="CPD-u6-08u" eventType="touchUpInside" id="iuc-Kt-7Nt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9N-0i-XZr">
                                 <rect key="frame" x="124" y="230" width="180" height="90"/>
                                 <state key="normal" title="Residence Dufy 4 ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="ButtonDufy:" destination="CPD-u6-08u" eventType="touchUpInside" id="sAf-vU-Tse"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3Y-3u-W8O">
                                 <rect key="frame" x="124" y="342" width="180" height="90"/>
@@ -132,7 +134,17 @@
                                 <state key="normal" title="Residence Saint-Louis">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="ButtonLouis:" destination="CPD-u6-08u" eventType="touchUpInside" id="UND-Qg-7nB"/>
+                                </connections>
                             </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bron" translatesAutoresizingMaskIntoConstraints="NO" id="RVy-3c-xeN">
+                                <rect key="frame" x="16" y="20" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="X2s-3B-yjh"/>
+                                    <constraint firstAttribute="width" constant="90" id="nJY-Sp-Zo1"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
